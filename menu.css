@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.left {
+    overflow-y: scroll;
+
+}
+
+.rM {
+    text-align: right;
+}
+
+
+h1 {
+    font-family: jaf-lapture-subhead, serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 3vh;
+    font-size: 1.5rem;
+}
+
+ol {
+    margin-left: 3rem;
+}
+
+li {
+    line-height: 2.3rem;
+}
+
+a {
+    font-family: jaf-lapture-subhead, serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.left a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.gd {
+    margin-top: 1vh;
+    padding-bottom: 4vh;
+    font-size: 1.2rem;
+}
+
+.rightMenu {
+    position: relative;
+    margin: 4vh;
+    margin-top: 7vh;
+    align-content: right;
+    text-align: right;
+    margin-bottom: -10vh;
+}
+
+.rightMenu a {
+    margin-right: 2vw;
+    justify-items: right;
+    text-align: right;
+    text-decoration: none;
+}
+
+.rightMenu a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+
+}
+
+.leftNest {
+    margin: 4vw;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+}
+
+.box {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .rightM {
+        position: relative;
+        margin-top: 4vh;
+        align-content: right;
+        text-align: right;
+        margin-bottom: -10vh;
+    }
+
+    .rightMenu {
+        margin-top: 2vh;
+        margin-right: 2vh;
+    }
+
+    .rightbox {
+        transform: translate(-100vw);
+        height: 0;
+    }
+
+    .box {
+        display: block;
+        height: auto;
+    }
+
+}
